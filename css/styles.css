@@ -1,0 +1,263 @@
+:root {
+  --text-color: #212121;
+  --fundal: #ffffff;
+  --evidentiere: #2196f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover,
+a:focus {
+  color: var(--evidentiere);
+}
+
+button:hover,
+button:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--evidentiere);
+}
+
+.set_header {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ececec;
+}
+
+.set_footer {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #2f303a;
+}
+
+.set_footer .logo {
+  color: #ffffff;
+  padding-bottom: 28px;
+}
+
+.set_footer .textalb {
+  color: #ffffff;
+}
+
+.titlul_principal {
+  font-size: 44px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-left: 452px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.descriptiontitle {
+  font-weight: 700;
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.b1 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 200px;
+}
+
+.fontmic {
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 24px 93px 25px 215px;
+}
+
+.logo > span {
+  color: #2196f3;
+}
+
+p {
+  line-height: 24px;
+}
+
+.textgri {
+  color: #757575;
+  font-weight: 400;
+}
+
+/*Am adăugat culoare pe fundal în prima secțiune, pentru a se observa și titlul*/
+.topsection {
+  background-color: #2f303a;
+}
+
+.container {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header */
+
+.set_header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.set_header__navigation ul {
+  display: flex;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 385px;
+}
+
+.phone {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 215px;
+}
+
+/* Puncte forte */
+
+.fontmic .container ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Servicii */
+
+.servicii {
+  display: flex;
+  padding-top: 50px;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+/* Echipa */
+
+.echipa {
+  background: #f5f4fa;
+}
+
+.echipa .subtitle {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.echipa .container ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.echipa p {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.echipa .textgri {
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* Footer */
+
+.set_footer .container {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 215px; - imi decalează textul WebStudio fata de laterala din stanga și nu înteleg de ce */
+  padding-top: 50px;
+}
+
+.set_footer address {
+  padding-left: 215px;
+}
+
+/* Portofoliu */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  border: 1px solid #eeeeee;
+}
+
+.section .container ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.item {
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc((100% - 30px) / 4);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card-set p {
+  padding-top: 20px;
+}
+
+.card-set .textgri {
+  padding-top: 4px;
+  padding-bottom: 30px;
+}
