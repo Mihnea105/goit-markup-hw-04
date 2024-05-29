@@ -123,7 +123,18 @@ p {
 
 /*Am adăugat culoare pe fundal în prima secțiune, pentru a se observa și titlul*/
 .topsection {
+  display: flex;
+  align-items: center;
   background-color: #2f303a;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fundal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .container {
